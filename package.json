@@ -1,0 +1,34 @@
+{
+  "name": "shpbl-action-ledger",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Agent action evidence ledger: append-only, hash-linked record of agent proposals, executions, redactions and annotations with an independent verifier. Reference implementation of the public SHPBL behaviour specification.",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "shpbl-action-ledger": "src/mcp-server.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "scan": "bun run scripts/symbol-scan.ts",
+    "typecheck": "tsgo --noEmit -p tsconfig.json"
+  },
+  "dependencies": {},
+  "keywords": [
+    "agent",
+    "audit",
+    "ledger",
+    "evidence",
+    "provenance",
+    "security"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "bun-types": "^1.1.0"
+  },
+  "author": "Kenneth E. Sweet Jr.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SweetKenneth/shpbl-action-ledger.git"
+  }
+}
